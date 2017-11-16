@@ -49,7 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\" />
-    <Folder Include="Creational\" />
+    <Folder Include="Creational\AbstructFactory\" />
+    <Folder Include="Creational\Builder\" />
+    <Folder Include="Creational\FactoryMethod\" />
     <Folder Include="Structural\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
