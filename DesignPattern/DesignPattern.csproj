@@ -41,18 +41,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\AbstructFactory\Client.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Design Pattern.docx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Behavioral\" />
-    <Folder Include="Creational\AbstructFactory\" />
+    <Folder Include="Behavioral\ChainofResp\" />
+    <Folder Include="Behavioral\Command\" />
+    <Folder Include="Behavioral\Interpreter\" />
+    <Folder Include="Behavioral\Iterator\" />
+    <Folder Include="Behavioral\Mediator\" />
+    <Folder Include="Behavioral\Memento\" />
+    <Folder Include="Behavioral\Observer\" />
+    <Folder Include="Behavioral\State\" />
+    <Folder Include="Behavioral\Strategy\" />
+    <Folder Include="Behavioral\TemplateMethod\" />
+    <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\FactoryMethod\" />
-    <Folder Include="Structural\" />
+    <Folder Include="Creational\Prototype\" />
+    <Folder Include="Creational\Singleton\" />
+    <Folder Include="Structural\Adapter\" />
+    <Folder Include="Structural\Bridge\" />
+    <Folder Include="Structural\Composite\" />
+    <Folder Include="Structural\Decorator\" />
+    <Folder Include="Structural\Facade\" />
+    <Folder Include="Structural\Flyweight\" />
+    <Folder Include="Structural\Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
