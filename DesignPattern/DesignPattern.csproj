@@ -41,6 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Command\Client.cs" />
+    <Compile Include="Behavioral\Command\FlipDownCommand.cs" />
+    <Compile Include="Behavioral\Command\FlipUpCommand.cs" />
+    <Compile Include="Behavioral\Command\ICommand.cs" />
+    <Compile Include="Behavioral\Command\Light.cs" />
+    <Compile Include="Behavioral\Command\Switch.cs" />
+    <Compile Include="Behavioral\Strategy\SHA384Hashing.cs" />
+    <Compile Include="Behavioral\Strategy\SHA256Hashing.cs" />
+    <Compile Include="Behavioral\Strategy\MD5Hashing.cs" />
+    <Compile Include="Behavioral\Strategy\HashingContext.cs" />
+    <Compile Include="Behavioral\Strategy\SHA1Hashing.cs" />
+    <Compile Include="Behavioral\Strategy\HashingStrategy.cs" />
+    <Compile Include="Behavioral\Strategy\Client.cs" />
     <Compile Include="Creational\AbstructFactory\Client.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,14 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\ChainofResp\" />
-    <Folder Include="Behavioral\Command\" />
     <Folder Include="Behavioral\Interpreter\" />
     <Folder Include="Behavioral\Iterator\" />
     <Folder Include="Behavioral\Mediator\" />
     <Folder Include="Behavioral\Memento\" />
     <Folder Include="Behavioral\Observer\" />
     <Folder Include="Behavioral\State\" />
-    <Folder Include="Behavioral\Strategy\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
     <Folder Include="Creational\Builder\" />
