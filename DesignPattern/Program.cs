@@ -11,9 +11,27 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            var stetegy = new Behavioral.Strategy.Client();
+            Console.WriteLine("Select a design pattern :");
+            Console.WriteLine("");
+             Console.WriteLine("1.  Strategy:");
+             Console.WriteLine("2. Command :");
+            Console.WriteLine("");
+          var opt=  Console.ReadLine();
 
-            var cmd = new Behavioral.Command.Client();
+            switch (opt)
+            {
+                case "1":
+                    var stetegy = new Behavioral.Strategy.Client();
+                    break;
+                case "2":
+                     var cmd = new Behavioral.Command.Client();
+                     break;
+                
+            }
+
+              Console.ReadKey();
+
+           
 
              Console.ReadKey();
         }

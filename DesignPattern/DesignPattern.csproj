@@ -11,6 +11,21 @@
     <AssemblyName>DesignPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,12 +69,24 @@
     <Compile Include="Behavioral\Strategy\SHA1Hashing.cs" />
     <Compile Include="Behavioral\Strategy\HashingStrategy.cs" />
     <Compile Include="Behavioral\Strategy\Client.cs" />
+    <Compile Include="Creational\AbstructFactory\SportsBike.cs" />
+    <Compile Include="Creational\AbstructFactory\RegularScooter.cs" />
+    <Compile Include="Creational\AbstructFactory\Scooty.cs" />
+    <Compile Include="Creational\AbstructFactory\RegularBike.cs" />
+    <Compile Include="Creational\AbstructFactory\HondaFactory.cs" />
+    <Compile Include="Creational\AbstructFactory\HeroFactory.cs" />
+    <Compile Include="Creational\AbstructFactory\IBike.cs" />
+    <Compile Include="Creational\AbstructFactory\IScooter.cs" />
+    <Compile Include="Creational\AbstructFactory\VehicleClient.cs" />
     <Compile Include="Creational\AbstructFactory\Client.cs" />
+    <Compile Include="Creational\AbstructFactory\IVehicleFactory.cs" />
+    <Compile Include="Creational\Builder\Client.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Creational\AbstructFactory\AbstructClassDiagram.cd" />
     <None Include="Design Pattern.docx" />
   </ItemGroup>
   <ItemGroup>
@@ -72,7 +99,6 @@
     <Folder Include="Behavioral\State\" />
     <Folder Include="Behavioral\TemplateMethod\" />
     <Folder Include="Behavioral\Visitor\" />
-    <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\FactoryMethod\" />
     <Folder Include="Creational\Prototype\" />
     <Folder Include="Creational\Singleton\" />
@@ -83,6 +109,23 @@
     <Folder Include="Structural\Facade\" />
     <Folder Include="Structural\Flyweight\" />
     <Folder Include="Structural\Proxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
